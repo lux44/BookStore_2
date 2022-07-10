@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="store_type">
+        <item>전체</item>
+        <item>새책방</item>
+        <item>헌책방</item>
+    </string-array>
+</resources>

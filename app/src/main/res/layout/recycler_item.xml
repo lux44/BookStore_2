@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardElevation="4dp"
+    app:contentPadding="4dp"
+    app:cardCornerRadius="4dp"
+    android:background="@color/ivory"
+    android:layout_marginBottom="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <TextView
+            android:id="@+id/textView_Store_Name"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:text="Store Name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_Adres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/textView_num"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:text="강북구 솔샘로 205 2층"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView_Store_Type_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/textView_Store_Name"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:text="Store Type Name"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView_Like"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toLeftOf="@id/imageView_Hate"
+            android:src="@drawable/bear_like" />
+        <ImageView
+            android:id="@+id/imageView_Hate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/bear_hate"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:layout_toLeftOf="@id/toggle_favorite"/>
+
+        <ToggleButton
+            android:id="@+id/toggle_favorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ic_favorite_toggle"
+            android:textOff=" "
+            android:textOn=" " />
+
+        <TextView
+            android:id="@+id/textView_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/textView_Store_Name"
+            android:layout_alignParentBottom="true"
+            android:padding="8dp"
+            android:text="02-1234-1234"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
